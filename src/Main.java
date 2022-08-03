@@ -1,13 +1,14 @@
 public class Main {
     public static void main(String[] args) {
+        int score = 130;
+        int replenishment = 1300;
+        int bonus = 0;
 
-        // Объявляете переменные для входных данных и
-        // параметров программы: одну для хранения
-        // стоимости билета, другую для хранения количества
-        // рублей для одной бонусной милли
+        if (replenishment > 1000) {
+            bonus = replenishment / 100;
+        }
+        int total = score + replenishment + bonus;
+        System.out.println("Ваш баланс: " + total + " руб.");
 
-        // Рассчитываете количество бонусных милль, используя
-        // значения заведённых переменных. Ответ сохраняете в
-        // новую переменную и выводите на экран
     }
 }
